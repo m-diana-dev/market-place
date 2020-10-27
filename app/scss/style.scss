@@ -68,13 +68,13 @@
     &-title{
         margin-bottom: 10px;
         font-size: 48px;
-        font-weight: 700;
+        @include bold;
         line-height: 72px;
     }
     &-text{
         margin-bottom: 50px;
         font-size: 20px;
-        font-weight: 500;
+        @include medium;
         line-height: 30px;
     }
     &-form{
@@ -90,7 +90,7 @@
             box-shadow: 0px 1px 10px 0px rgba(124, 178, 64, 0.75);
             border: none;
             font-size: 14px;
-            font-weight: 500;
+            @include medium;
             padding-left: 25px;
             padding-right: 60px;
             outline: none;
@@ -167,17 +167,17 @@
         color: $bg;
         font-size: 18px;
         display: block;
-        font-weight: 500;
+        @include medium;
     }
     &-category{
         display: block;
         font-size: 14px;
         color: $green;
-        font-weight: 500;
+        @include medium;
     }
     &-price{
         font-size: 20px;
-        font-weight: 700;
+        @include bold;
         color: $bg;
 
     }
@@ -205,7 +205,7 @@
         }
         span{
             font-size: 14px;
-            font-weight: 500;
+            @include medium;
         }
     }
     &-star{
@@ -265,4 +265,54 @@
     }
 }
 // end products-slider
+// start advantages
+.advantages{
+    background-color: $bg;
+    padding: 110px 0;
+}
+.advantages__title{
+    color: #fff;
+}
+.advantages__inner{
+    display: flex;
+    justify-content: space-between;
+}
+.advantages__item{
+    max-width: 370px;
+    text-align: center;
+    padding: 0 15px;
+    &:hover{
+        .advantages__item-images{
+            background-color: $green;
+            g{
+                fill: #fff;
+            }
+        }
+        .advantages__item-title{
+            color: $green;
+        }
+    }
+    &-images{
+        width: 114px;
+        height: 114px;
+        background-color: #fff;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto 30px;
+        transition: all .3s;
+    }
+    &-title{
+        margin-bottom: 25px;
+        color: #fff;
+        @include medium;
+        font-size: 24px;
+        transition: all .3s;
+    }
+    &-tetx{
+        font-size: 15px;
+    }
+}
+// end advantages
   
