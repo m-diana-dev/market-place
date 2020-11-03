@@ -1657,5 +1657,105 @@ button.icon-unsorted{
     }
 }
 //end contacts
-
+//start settings
+.settings{
+    padding-bottom: 100px;
+}
+.product-one__tabs.settings__tabs{
+    display: flex;
+    .tabs{
+        max-width: 270px;
+        width: 100%;
+        margin-right: 30px;
+        border: 1px solid #dedede;
+        border-bottom: none;
+        text-align: left;
+        display: block;
+        height: 100%;
+        span{
+            display: block;
+            background-color: #fff;
+            border-bottom: 1px solid #dedede;
+            padding: 17px 17px 17px 50px;
+            color: #707070;
+            font-size: 14px;
+            @include medium;
+            &.active{
+                border-bottom: 2px solid $green;
+                color: #37474f;
+                &::before{
+                    color: $green;
+                }
+            }
+            &::before{
+                left: 24px;
+                color: #444444;
+                font-size: 14px;
+            }
+        }
+    }
+    .tabs .tab+.tab {
+        border-left: none;
+    }
+    .tab_content{
+        width: 100%;
+        padding: 0;
+        border: none;
+        background-color: transparent;
+    }
+}
+.page-box{
+    background-color: #fff;
+    border: 1px solid #dedede;
+    min-height: 100%;
+}
+.page-box__title{
+    border-bottom: 1px solid #dedede;
+    padding: 18px 34px;
+    font-size: 24px;
+    color: $bg;
+    @include medium;
+}
+.page-box__content{
+    padding: 30px 35px 60px;
+}
+.settings__line{
+    margin-bottom: 21px;
+    display: flex;
+    align-items: center;
+    label{
+        color: #444444;
+        width: 260px;
+    }
+    input{
+        max-width: 540px;
+        width: 100%;
+        background-color: #f9f9f9;
+        border: 1px solid #dedede;
+        height: 40px;
+        color: #000;
+        padding: 0 18px;
+    }
+    select{
+        max-width: 540px;
+        width: 100%;
+        background-color: #f9f9f9;
+        border: 1px solid #dedede;
+        height: 40px;
+        color: #707070;
+        padding: 0 18px;
+    }
+}
+.settings__btn{
+    border: none;
+    background-color: $green;
+    height: 45px;
+    padding: 0 5px;
+    text-align: center;
+    color: #fff;
+    @include medium;
+    max-width: 108px;
+    width: 100%;
+}
+//end settings
 @import 'media';
